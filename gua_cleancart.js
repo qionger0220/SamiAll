@@ -4,7 +4,7 @@
 因其他脚本会加入商品到购物车，故此脚本用来清空购物车
 包括预售
 需要算法支持
-默认：不执行 如需要请添加环境变量
+默认：执行 如需要请添加环境变量
 gua_cleancart_Run="true"
 gua_cleancart_SignUrl="" # 算法url
 gua_cleancart_Authorization="" # 算法url token 有则填
@@ -34,7 +34,7 @@ pin3@&@不清空👉该pin不清空
 */
 let jdSignUrl = '' // 算法url
 let Authorization = '' // 算法url token 有则填
-let cleancartRun = 'false'
+let cleancartRun = 'true'
 let cleancartProducts = ''
 
 const $ = new Env('清空购物车');
