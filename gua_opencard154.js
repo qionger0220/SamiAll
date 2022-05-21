@@ -35,8 +35,8 @@ cron:30 1 18-31/3 5 *
 
 new Env('5.18~5.31 五月宠爱季 和你在一起')
 */
-let guaopencard_addSku = 'false'
-let guaopencard = 'false'
+let guaopencard_addSku = 'true'
+let guaopencard = 'true'
 let guaopenwait = '0'
 let guaopencard_draw = '0'
 
