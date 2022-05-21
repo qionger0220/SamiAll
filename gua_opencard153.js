@@ -34,8 +34,8 @@ cron:30 1 17-31/3,1-16/3 5,6 *
 30 1 17-31/3,1-16/3 5,6 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard153.js, tag=5.17~6.16 一见倾芯 天长地久, enabled=true
 
 */
-let guaopencard_addSku = 'false'
-let guaopencard = 'false'
+let guaopencard_addSku = 'true'
+let guaopencard = 'true'
 let guaopenwait = '0'
 let guaopencard_draw = '0'
 
