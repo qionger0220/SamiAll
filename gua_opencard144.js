@@ -33,8 +33,8 @@ cron:30 2 6-21 5 *
 30 2 6-21 5 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard144.js, tag=5.6~5.21 情暖五月 “惠”聚甜蜜, enabled=true
 
 */
-let guaopencard_addSku = 'false'
-let guaopencard = 'false'
+let guaopencard_addSku = 'true'
+let guaopencard = 'true'
 let guaopenwait = '0'
 let guaopencard_draw = '0'
 
