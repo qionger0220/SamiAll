@@ -34,8 +34,8 @@ cron:30 8 17-31 5 *
 30 8 17-31 5 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard151.js, tag=5.17~6.1 爱尚夏日 大牌献礼, enabled=true
 
 */
-let guaopencard_addSku = 'false'
-let guaopencard = 'false'
+let guaopencard_addSku = 'true'
+let guaopencard = 'true'
 let guaopenwait = '0'
 let guaopencard_draw = '0'
 
