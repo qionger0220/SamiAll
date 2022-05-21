@@ -12,11 +12,11 @@ const { url } = require('inspector');
 10 0 * * * jd_jin_tie.js, tag=领金贴, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 ===========Loon===============
 [Script]
-cron "10 0 * * *" script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jin_tie.js,tag=领金贴
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/KingRan/JDJB/main/jd_jin_tie.js,tag=领金贴
 =======Surge===========
-领金贴 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jin_tie.js
+领金贴 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/KingRan/JDJB/main/jd_jin_tie.js
 ==============小火箭=============
-领金贴 = type=cron,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jin_tie.js, cronexpr="10 0 * * *", timeout=3600, enable=true
+领金贴 = type=cron,script-path=https://raw.githubusercontent.com/KingRan/JDJB/main/jd_jin_tie.js, cronexpr="10 0 * * *", timeout=3600, enable=true
  */
 const $ = new Env('领金贴');
 const notify = $.isNode() ? require('./sendNotify') : '';
@@ -24,8 +24,8 @@ const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message, allMessage = '';
-// let shareId = ["e506cfec2cff4704b63077066f224038", "58dec205098349d2a4c58f4de53c5266", "8071b0c771ea432fb8ec41d0e175b996","93c3b46781c440e8b1c31f1cabf0e4e4"][Math.floor((Math.random() * 4))];
-if ($.isNode()) { 
+//let shareId = ["19db2d225536431cab967af51dc06fa4", "cbf205415fdf4f29b0ddb1601b6de5f0"][Math.floor((Math.random() * 2))];
+if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
         cookiesArr.push(jdCookieNode[item]);
     });
@@ -70,7 +70,7 @@ if ($.isNode()) {
 async function main() {
     try {
         await channelUserSignInfo_xh();
-        await queryMission_xh();
+        //await queryMission_xh();
         await channelUserSubsidyInfo_xh();
     } catch (e) {
         $.logErr(e)
