@@ -35,8 +35,8 @@ cron:30 2 20-31/3 5 *
 30 2 20-31/3 5 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard156.js, tag=5.20~5.31 大牌优惠趴 五月爱相伴, enabled=true
 
 */
-let guaopencard_addSku = 'false' // 加购
-let guaopencard = 'false' // 执行
+let guaopencard_addSku = 'true' // 加购
+let guaopencard = 'true' // 执行
 let guaopenwait = 0 // 等待（秒）
 let guaopencard_draw = 0 // 抽奖次数
 
